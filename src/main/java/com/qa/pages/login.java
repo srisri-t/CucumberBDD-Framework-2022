@@ -31,7 +31,7 @@ public class login extends TestBase{
 	//logout() referes to log out from the Salesforce account
 	public void logout() throws InterruptedException {
 		Thread.sleep(5000);
-//		driver.switchTo().alert().accept();
+		driver.switchTo().alert().accept();
 		driver.findElement(By.xpath("//header/div[2]/span[1]/div[2]/ul[1]/li[9]/span[1]/button[1]/div[1]/span[1]/div[1]/span[1]")).click();
 		driver.findElement(By.xpath("//a[contains(text(),'Log Out')]")).click();
 	}
