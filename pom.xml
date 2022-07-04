@@ -102,6 +102,13 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.0.0</version>
 		</dependency>
+		<dependency>
+<!--	Spice up your java: Automatic Resource Management, automatic generation of getters, setters, equals, hashCode and toString, and more!	-->
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.24</version>
+			<scope>provided</scope>
+		</dependency>
 
 	</dependencies>
 
