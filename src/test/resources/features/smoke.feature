@@ -6,6 +6,6 @@ Feature: Login Page Feature
 
   Scenario: Validate login SF application
 Then login into website
-Then verify logout
+
 
 

@@ -13,12 +13,6 @@ public class LoginPageSteps extends TestBase {
 	@Then("^login into website$")
 	public void login_into_website() throws Throwable {
 		loginP = new login();
-		loginP.signin();
-	}
-
-	@Then("^verify logout$")
-	public void verify_logout() throws Throwable {
-		loginP = new login();
-		loginP.logout();
+		loginP.signing();
 	}
 }

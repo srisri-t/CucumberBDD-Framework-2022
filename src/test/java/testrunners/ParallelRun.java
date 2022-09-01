@@ -1,5 +1,8 @@
-//This file is to define the before, after class
 
+/**
+ * This file is to define the before, after class.
+ ************************** 		Do not change anything in this file			 **************************
+ */
 package testrunners;
 
 import io.cucumber.testng.*;
@@ -7,11 +10,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-//plugin is for reports
-//monochrome is to print console with out special characters.
-//glue is for step definitions declaration
-
 
 @CucumberOptions(
         plugin = {"pretty",

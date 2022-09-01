@@ -15,26 +15,13 @@ public class login extends TestBase{
 	}
 	
 	//Actions:
-	public String validateLoginPageTitle(){
-		return driver.getTitle();
-	}
-	
-	//Signin() referes to sign into the Salesforce login page with valid credentials
-	public void signin()
+	//Signing() refers to sign in to the Salesforce login page with valid credentials
+	public void signing()
 	{
-        driver.findElement(By.xpath("//input[@id='username']")).sendKeys("srisrikairos@gmail.com");
+        driver.findElement(By.xpath("//input[@id='username']")).sendKeys("srisri@gmail.com");
         driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Sherwin@123");
         driver.findElement(By.xpath("//input[@id='Login']")).click();
 
 	}
 
-	//logout() referes to log out from the Salesforce account
-	public void logout() throws InterruptedException {
-		Thread.sleep(5000);
-		driver.switchTo().alert().accept();
-		driver.findElement(By.xpath("//header/div[2]/span[1]/div[2]/ul[1]/li[9]/span[1]/button[1]/div[1]/span[1]/div[1]/span[1]")).click();
-		driver.findElement(By.xpath("//a[contains(text(),'Log Out')]")).click();
-	}
-
-	
 }

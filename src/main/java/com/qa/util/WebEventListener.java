@@ -1,5 +1,5 @@
 package com.qa.util;
-/*************************************** PURPOSE **********************************
+/**
 
  - This class implements the WebDriverEventListener, which is included under events.
  The purpose of implementing this interface is to override all the methods and define certain useful  Log statements 
@@ -20,7 +20,7 @@ import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import com.qa.base.TestBase;
 
-public class WebEventListener extends TestBase implements WebDriverEventListener {
+public class WebEventListener extends TestBase  {
 public static String toText="Start of Program";
 	public void beforeNavigateTo(String url, WebDriver driver) {
 		System.out.println("Before navigating to: '" + url + "'");
@@ -68,16 +68,6 @@ public static String toText="Start of Program";
 
 	public void afterNavigateForward(WebDriver driver) {
 		System.out.println("Navigated forward to next page");
-	}
-
-	public void onException(Throwable error, WebDriver driver) {
-		System.out.println("Exception occured: " + error);
-		try {
-			TestUtil.takeScreenshotAtEndOfTest();
-//			TestUtil.logBrowserConsoleLogs();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
