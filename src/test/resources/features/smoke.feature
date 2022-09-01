@@ -2,7 +2,7 @@
 
 Feature: Login Page Feature
 
-#  Here the scenario is to login to salesforce application and then Login and then log out from SF Account
+#  Here the scenario is to login to salesforce application and then Login to SF Account
 
   Scenario: Validate login SF application
 Then login into website
